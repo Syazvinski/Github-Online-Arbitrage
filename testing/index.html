@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Amazon Profit Checker</h1>
+
+<p id="description">This check takes an Amazon link and find the same product on wallmart. It then calculates all fees such as (shipping, referral, tax) and tells you if you can sell for a profit.</p>
+
+<!-- button fucntion-->
+<script>
+function myFunction() {
+  var textBoxValue = document.getElementById('amazonLink').value
+  document.getElementById("amznLink").innerHTML = textBoxValue;         
+}
+</script>
+
+<!-- horizontal line-->
+<hr>
+
+<!-- amazon link text box and text-->
+<p>Amazon Link</p>
+<input type="text" id = "amazonLink">
+
+<!-- button-->
+<button type="button" onclick="myFunction()">Check Profitability</button>
+
+
+<!-- Info-->
+<div>
+  <p id = "amznLinkTitle" style="float:left">Amazon Link:</p>
+  <p id = "amznLink" style = "margin-left : 10px;float:left">yes</p>
+</div>
+<p>hey</p>
+
+
+</body>
+</html>
